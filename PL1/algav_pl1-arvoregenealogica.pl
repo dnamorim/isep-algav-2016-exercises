@@ -88,11 +88,11 @@ avo_m(X,Y):-
 /* Regra Netos */
 neto(X,Y):-
 	homem(X),
-	avo_h(Y,X).
+	avo_h(Y,X);avo_m(Y,X).
 
 neta(X,Y):-
 	mulher(X),
-	avo_h(Y,X).
+	avo_h(Y,X);avo_m(Y,X).
 
 /* Regra Irmãos */
 irmao(X,Y):-

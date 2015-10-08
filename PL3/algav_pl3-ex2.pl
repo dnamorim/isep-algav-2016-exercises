@@ -31,10 +31,14 @@ nega(X):- call(X),!,fail.
 nega(_).
 
 se_entao_senao(X,Y,Z):-
-  call(X),!,call(Y);call(Z).
+  call(X),!,call(Y).
+se_entao_senao(_,_,Z):-
+  call(Z).
 
 se_entao(X,Y):-
-  (call(X),call(Y),!);true.
+  call(X),call(Y),!.
+se_entao(_,_):-
+  true.
 
 questao(VAL):-
   write("Atributo? "),
