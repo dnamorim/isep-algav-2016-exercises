@@ -1,5 +1,5 @@
 /**
-*	@file algav_pl1.pl
+*	@file algav_pl1-ex6.pl
 *	@brief ALGAV PL1: Exercício 6 PROLOG
 *
 *	@author Duarte Nuno Amorim (1130674@iseep.ipp.pt)
